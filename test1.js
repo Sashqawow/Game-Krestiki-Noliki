@@ -1,5 +1,5 @@
-let player1=prompt('Введите имя первого игрока');
-let player2=prompt('Введите имя второго игрока');
+let player1=prompt('Введите имя первого игрока/Enter the name of the first player');
+let player2=prompt('Введите имя второго игрока/Enter the name of the second player');
 
 window.onload=function(){
 for (var i=0; i<9; i++){
