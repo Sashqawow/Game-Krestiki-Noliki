@@ -3,8 +3,8 @@
   height: 300px;
   background: #4a779c;
   border-radius: 15px 15px 15px 15px;
-
 }
+
 .block{
   width: 100px;
   height: 100px;
@@ -15,13 +15,18 @@
   text-align: center;
   font-size: 90px;
 }
+
 .color{
+  font-size: 23px;
+  text-align: center;
   background-color: #ffe; 
   color: #4a779c;
   border-radius: 15px 15px 15px 15px;
 }
-.buttoncolor{
+.buttonclick{
+  font-size: 23px;
   border-radius: 15px 15px 15px 15px;
 }
-
-
+h1{
+  color: #4a779c;
+}
