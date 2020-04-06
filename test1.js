@@ -14,7 +14,7 @@ function setPlayersNames() {
     var notification = document.createElement('p')
     notification.classList.add("notification-warning");
     notification.textContent = 'Введите корректные имена';
-    document.getElementByTag('h1').after(notification);
+    document.getElementsByTagName('h1')[0].after(notification);
   } else {
     // TODO: start the game
   }
