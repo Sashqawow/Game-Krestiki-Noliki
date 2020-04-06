@@ -6,8 +6,9 @@ var firstPlayerName = null;
 var secondPlayerName = null;
 
 function setPlayersNames() {
-  var name1 = document.forms["myForm"]["1name"].value.trim();
-  var name2 = document.forms["myForm"]["2name"].value.trim();
+  var registerFrom = docuemnt.getElementById('playersFrom');
+  var name1 = registerFrom["1name"].value.trim();
+  var name2 = registerFrom["2name"].value.trim();
   
   if (name1.length < 2 && name2.length < 2) {
     var notification = docuemnt.createElement('p')
