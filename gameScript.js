@@ -18,7 +18,7 @@ function setPlayersNames() {
     notification.classList.add('notification');
     notification.classList.add('notification-warning');
     notification.textContent = 'Введите корректные имена';
-    var oldNotification = document.querySelector('.notification');
+    var oldNotification = document.querySelector('#registration .notification');
     if (!oldNotification) document.querySelector('#registration .register-form').prepend(notification);
   } else {
     firstPlayerName = name1;
@@ -28,9 +28,18 @@ function setPlayersNames() {
   }
 }
 
-function gameTurn() {
-    // TODO: game turn logic
-    console.log('Check');
+function gameTurn(e) {
+    var cellIndex = e.target.dataset['cellIndex'];
+    if (deck[cellIndex]) {
+      var notification = document.createElement('p');
+      notification.classList.add('notification');
+      notification.classList.add('notification-warning');
+      notification.textContent = 'Нажатое поле уже занято';
+      var oldNotification = document.querySelector('#game .notification');
+      if (!oldNotification) document.querySelector('#game #gameDeck').before(notification);
+    } else {
+      // TODO: turn logic
+    }
 }
 
 // старое говно для справки
