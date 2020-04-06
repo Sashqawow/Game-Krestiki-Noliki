@@ -13,14 +13,29 @@
 </style>
 <body>
     <center>
-    <h1>Регистрация игроков</h1>
-    <form name="myForm"  method="post" id="form">
-        <input type="text" name="1name" autocomplete="off" class="color" placeholder="Имя первого игрока"> </br></br>
-        <input type="text" name="2name" autocomplete="off" class="color" placeholder="Имя второго игрока"> </br></br>
-       <input type="button" onclick="validateForm()" name="submit" value="Зарегистрировать игроков" class="buttonclick">
-      </form> </br>
-   <div id="krestik" ></div>
-</center>
+        <h1>Регистрация игроков</h1>
+        <div class="register-form">
+            <form name="playersFrom"  method="post" id="playersFrom">
+                <input type="text" name="1name" autocomplete="off" class="color" placeholder="Имя первого игрока"> </br></br>
+                <input type="text" name="2name" autocomplete="off" class="color" placeholder="Имя второго игрока"> </br></br>
+                <input type="button" onclick="setPlayersNames()" name="submit" value="Зарегистрировать игроков" class="buttonclick">
+            </form>
+        </div>
+
+        </br>
+
+        <div id="game" class="game_disabled>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+        </div>
+    </center>
 </body>
 
 </html>
