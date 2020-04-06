@@ -6,14 +6,21 @@
 <link href="test2.css" rel="stylesheet" type="text/css"/>
 <script type='text/javascript' src="test1.js" > </script>
 </head>
+<style>
+    body{
+        background: #000000;
+    }
+</style>
 <body>
+    <center>
     <h1>Регистрация игроков</h1>
     <form name="myForm"  method="post" id="form">
         <input type="text" name="1name" autocomplete="off" class="color" placeholder="Имя первого игрока"> </br></br>
         <input type="text" name="2name" autocomplete="off" class="color" placeholder="Имя второго игрока"> </br></br>
        <input type="button" onclick="validateForm()" name="submit" value="Зарегистрировать игроков" class="buttonclick">
-       </form> </br>
-    <div id="krestik"></div>
+      </form> </br>
+   <div id="krestik" ></div>
+</center>
 </body>
 
 </html>
