@@ -12,8 +12,10 @@ function setPlayersNames() {
   
   if (name1.length < 2 && name2.length < 2) {
     var notification = document.createElement('p')
-    notification.classList.add("notification-warning");
+    notification.classList.add(['notification', 'notification-warning']);
     notification.textContent = 'Введите корректные имена';
+    var oldNotification = document.querySelector('.notification');
+    if (oldNotification) oldNotification.remote();
     document.querySelector('.register-form').prepend(notification);
   } else {
     // TODO: start the game
