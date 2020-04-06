@@ -5,7 +5,7 @@ var deck = [null, null, null, null, null, null, null, null, null]; // пуста
 var firstPlayerName = null;
 var secondPlayerName = null;
 
-setPlayersNames() {
+function setPlayersNames() {
   var name1 = document.forms["myForm"]["1name"].value.trim();
   var name2 = document.forms["myForm"]["2name"].value.trim();
   
