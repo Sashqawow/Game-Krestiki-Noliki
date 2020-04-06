@@ -6,15 +6,15 @@ var firstPlayerName = null;
 var secondPlayerName = null;
 
 function setPlayersNames() {
-  var registerFrom = docuemnt.getElementById('playersFrom');
+  var registerFrom = document.getElementById('playersFrom');
   var name1 = registerFrom["1name"].value.trim();
   var name2 = registerFrom["2name"].value.trim();
   
   if (name1.length < 2 && name2.length < 2) {
-    var notification = docuemnt.createElement('p')
+    var notification = document.createElement('p')
     notification.classList.add("notification-warning");
     notification.textContent = 'Введите корректные имена';
-    docuemnt.getElementByTag('h1').after(notification);
+    document.getElementByTag('h1').after(notification);
   } else {
     // TODO: start the game
   }
